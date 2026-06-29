@@ -13,9 +13,6 @@
 }
 
 .header-logo h1 {
-    font-size: 5rem;   /* 文字の大きさ（必要に応じて） */
-}
-
-.header-logo li {
-    text-align: right;
+    font-size: 5rem;       /* 数値を大きくするほど文字が大きくなります */
+    text-align: center;    /* 文字を中央に配置 */
 }
