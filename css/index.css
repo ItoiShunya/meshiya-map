@@ -1,18 +1,130 @@
-.header-logo {
-    display: flex;       /* 子要素（画像とh1）を横並びにする */
-    align-items: center; /* 画像と文字の「上下中央」を揃える */
-    gap: 15px;           /* 画像と文字の間のすき間（お好みで調整） */
-    text-decoration: none; /* リンクの下線を消す */
-    color: #333;         /* 文字の色（お好みで調整） */
+/* 全体の基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header-logo img {
-    width: 100px;         /* 画像の横幅（お好みの大きさに変更してください） */
-    height: auto;        /* 縦横比を崩さないように自動調整 */
-    object-fit: cover;   /* 画像が歪まないように綺麗に収める設定 */
+body {
+    font-family: "Yu Gothic", sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
 }
 
-.header-logo h1 {
-    font-size: 5rem;       /* 数値を大きくするほど文字が大きくなります */
-    text-align: center;    /* 文字を中央に配置 */
+/* ヘッダーの設定（Hideyoshiya.cssと統一） */
+header {
+    background: #222;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb347;
+}
+
+/* サイトタイトルの設定 */
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3rem;
+}
+
+/* レストランカードのレイアウト */
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    color: #d35400;
+}
+
+.category {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* ボタンの設定 */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #a84300;
+}
+
+/* フッターの設定 */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
 }
