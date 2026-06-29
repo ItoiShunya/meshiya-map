@@ -7,11 +7,15 @@
 }
 
 .header-logo img {
-    width: 60px;         /* 画像の横幅（お好みの大きさに変更してください） */
+    width: 200px;         /* 画像の横幅（お好みの大きさに変更してください） */
     height: auto;        /* 縦横比を崩さないように自動調整 */
     object-fit: cover;   /* 画像が歪まないように綺麗に収める設定 */
 }
 
 .header-logo h1 {
-    font-size: 20rem;   /* 文字の大きさ（必要に応じて） */
+    font-size: 5rem;   /* 文字の大きさ（必要に応じて） */
+}
+
+.header-logo li {
+    text-align: right;
 }
